@@ -25,16 +25,16 @@ The following fostware would be installed in your cluster or computer before run
 
 Before using UROBORUS.pl, you should use TopHat to align the reads to genome, and get the unmapped.sam and accepted_hits.bam files.
 
-    UROBORUS.pl 0.0.2 #circRNA identification tool in total RNA-seq data
+    UROBORUS.pl 2.1.1   (Oct. 1, 2019)
     usage:
-    perl UROBORUS.pl -index /path/genome -gtf /path/genes.gtf -fasta /path unmapped.sam
+            perl UROBORUS.pl -index /path/genome -gtf /path/genes.gtf -fasta /path/ unmapped.sam accepted_hits.bam
     Options:
-    -index:	genome index (use bowtie1 index);
-    -gtf:	gene annotation file (*.gtf file);
-    -fasta:	path for genome sequence in fasta file (*.fa) in separate chromosome;
-    -p:	threads (Integer, default = 6);
-    -temp:	keeping the temporary file;
-    -help:	usage help;
+            -index:	genome index (use bowtie1 index);
+            -gtf:	gene annotation file (*.gtf file);
+            -fasta:	path for genome sequence in fasta file (*.fa) in separate chromosome;
+            -p:	    threads (Integer, default = 6);
+            -temp:	keeping the temporary file;
+            -help:	usage help;
 
 ## Documentation
 
