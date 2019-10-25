@@ -19,7 +19,9 @@ The following fostware would be installed in your cluster or computer before run
 
 *  Bowtie (>=1.1.2), http://bowtie-bio.sourceforge.net/index.shtml.
 
-*  Bowtie2 (>=2.2.9), http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml
+*  Bowtie2 (>=2.2.9), http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml.
+
+*  Samtools (>=1.9), http://samtools.sourceforge.net/.    
 
 ## Usage
 
@@ -35,6 +37,11 @@ Before using UROBORUS.pl, you should use TopHat to align the reads to genome, an
             -p:	    threads (Integer, default = 6);
             -temp:	keeping the temporary file (0 means no, 1 means yes, default = 0);
             -help:	usage help;
+            
+## Note
+
+1. If the genome sequences were saved as '**chr1.fa**' or '**1.fa**', then the -fasta should be set as **-fasta path/**;
+2. if the genome sequences were saved as '**Homo_sapiens.GRCh38.dna.chromosome.1.fa**', then the -fasta should be set as **-fasta path/Homo_sapiens.GRCh38.dna.chromosome**;
 
 ## Example
     
