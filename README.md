@@ -33,13 +33,34 @@ Before using UROBORUS.pl, you should use TopHat to align the reads to genome, an
             -gtf:	gene annotation file (*.gtf file);
             -fasta:	path for genome sequence in fasta file (*.fa) in separate chromosome;
             -p:	    threads (Integer, default = 6);
-            -temp:	keeping the temporary file;
+            -temp:	keeping the temporary file (0 means no, 1 means yes, default = 0);
             -help:	usage help;
 
+## Example
+    
+    Command:
+            perl UROBORUS.pl -index bowtie1_hg19/hg19 -gtf genes.gtf -fasta Chromosomes_home/ unmapped.sa accepted_hits.bam
+
+## Output file format:
+
+    The output file contains eight columns:
+        1.  Chromosome
+        2.  Start of Junction
+        3.  End of Junction
+        4.  Strand
+        5.  Parental Gene Name
+        6.  Genomic Distance
+        7.  Read Counts
+        8.  Matched Transcript ID
+        
+    Output example:
+        chr18	54426095	54448887	+	WDR7	22792	18	NM_052834
+        chr5	64537930	64569274	-	ADAMTS6	31344	17	NM_197941
+    
 ## Documentation
 
 Documentation on the software can be found at http://bioinfo.nuaa.edu.cn/uroborus.html.
 
 ## Reference
 
-Song X, Zhang N, Han P, Lai RK, Wang K, Lu W. Circular RNA Profile in Gliomas Revealed by Identification Tool UROBORUS. Nucleic Acids Research, 2016, 44:e87.
+**Song X**, Zhang N, Han P, Lai RK, Wang K, Lu W. Circular RNA Profile in Gliomas Revealed by Identification Tool UROBORUS. Nucleic Acids Research, 2016, 44:e87.
