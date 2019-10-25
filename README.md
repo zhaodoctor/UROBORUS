@@ -8,9 +8,37 @@ Recent evidence suggested that many endogenous circular RNAs (circRNAs) may play
 
 Please note that circular RNA does not has PloyA tail, so you can not detect any circRNA in PolyA RNA-seq. You should use PolyA minus or total RNA-seq data to detect circular RNA.
 
+## Installation
+
+The following fostware would be installed in your cluster or computer before running the UROBORUS.pl.
+
+*  Perl (>=5.24.0), https://www.perl.org/get.html.   
+    `Perl should be built using the useithreads configuration option. If not, you would recieve an error message – "Perl not built to support threads", when running UROBORUS.pl.`
+    
+*  Tophat (>=2.1.0), http://ccb.jhu.edu/software/tophat/index.shtml.
+
+*  Bowtie (>=1.1.2), http://bowtie-bio.sourceforge.net/index.shtml.
+
+*  Bowtie2 (>=2.2.9), http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml
+
+## Usage
+
+Before using UROBORUS.pl, you should use TopHat to align the reads to genome, and get the unmapped.sam and accepted_hits.bam files.
+
+    UROBORUS.pl 0.0.2 #circRNA identification tool in total RNA-seq data
+    usage:
+    perl UROBORUS.pl -index /path/genome -gtf /path/genes.gtf -fasta /path unmapped.sam
+    Options:
+    -index:	genome index (use bowtie1 index);
+    -gtf:	gene annotation file (*.gtf file);
+    -fasta:	path for genome sequence in fasta file (*.fa) in separate chromosome;
+    -p:	threads (Integer, default = 6);
+    -temp:	keeping the temporary file;
+    -help:	usage help;
+
 ## Documentation
 
-Documentation on the software can be found at http://uroborus.openbioinformatics.org.
+Documentation on the software can be found at http://bioinfo.nuaa.edu.cn/uroborus.html.
 
 ## Reference
 
