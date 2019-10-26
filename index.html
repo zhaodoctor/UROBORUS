@@ -1,258 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Documentation for UROBORUS software">
-        <meta name="author" content="Xiaofeng Song, et al">
-        <link rel="canonical" href="http://uroborus.openbioinformatics.org/">
-        <link rel="shortcut icon" href="favicon.ico">
-        
-        <title>UROBORUS Documentation</title>
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documentation for UROBORUS software">
+  <meta name="author" content="Xiaofeng Song, et al">
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  <title>Home - UROBORUS Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Home";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
 
-            ga('create', 'UA-73567476-1', 'uroborus.openbioinformatics.org');
-            ga('send', 'pageview');
-        </script> 
-    </head>
+<body class="wy-body-for-nav" role="document">
 
-    <body class="homepage">
+  <div class="wy-grid-for-nav">
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> UROBORUS Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href=".">UROBORUS Documentation</a>
-                </div>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href=".">Home</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#introduction">Introduction</a></li>
+    
 
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href=".">Home</a>
-                            </li>
-                            <li >
-                                <a href="download/">Download</a>
-                            </li>
-                        </ul>
+    <li class="toctree-l2"><a href="#installation">Installation</a></li>
+    
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="disabled">
-                                <a rel="next" >
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="download/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://github.com/WGLab/uroborus/edit/master/docs/index.md"><i class="fa fa-github"></i> Edit on GitHub</a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <li class="toctree-l2"><a href="#usage">Usage</a></li>
+    
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#introduction">Introduction</a></li>
-        <li class="main "><a href="#usage">Usage</a></li>
-        <li class="main "><a href="#note">Note</a></li>
-        <li class="main "><a href="#example">Example</a></li>
-        <li class="main "><a href="#prerequisites">Prerequisites</a></li>
-        <li class="main "><a href="#output-file-format">Output file format</a></li>
-        <li class="main "><a href="#reference">Reference</a></li>
-        <li class="main "><a href="#contact">Contact</a></li>
+    <li class="toctree-l2"><a href="#note">Note</a></li>
+    
+
+    <li class="toctree-l2"><a href="#example">Example</a></li>
+    
+
+    <li class="toctree-l2"><a href="#output-file-format">Output file format:</a></li>
+    
+
+    <li class="toctree-l2"><a href="#reference">Reference</a></li>
+    
+
+    <li class="toctree-l2"><a href="#contact">Contact</a></li>
+    
+
     </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="download/">Download</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="about/">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="releases/">Releases</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
 
-<h2 id="introduction">Introduction</h2>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">UROBORUS Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="http://github.com/xiaofengsong/uroborus/edit/master/docs/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="introduction">Introduction</h2>
 <p>UROBORUS is a computational pipeline to detect circular RNA from RNA-Seq data, based on junction reads from back spliced exons.</p>
+<h2 id="installation">Installation</h2>
+<p>The following fostware would be installed in your cluster or computer before running the UROBORUS.pl.</p>
+<ul>
+<li>
+<p>Perl (&gt;=5.24.0), <a href="https://www.perl.org/get.html">https://www.perl.org/get.html</a>. <br />
+<code>Perl should be built using the useithreads configuration option. If not, you would recieve an error message – "Perl not built to support threads", when running UROBORUS.pl.</code></p>
+</li>
+<li>
+<p>Tophat (&gt;=2.1.0), <a href="http://ccb.jhu.edu/software/tophat/index.shtml">http://ccb.jhu.edu/software/tophat/index.shtml</a>.</p>
+</li>
+<li>
+<p>Bowtie (&gt;=1.1.2), <a href="http://bowtie-bio.sourceforge.net/index.shtml">http://bowtie-bio.sourceforge.net/index.shtml</a>.</p>
+</li>
+<li>
+<p>Bowtie2 (&gt;=2.2.9), <a href="http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml">http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml</a>.</p>
+</li>
+<li>
+<p>Samtools (&gt;=1.9), <a href="http://samtools.sourceforge.net/">http://samtools.sourceforge.net/</a>.    </p>
+</li>
+</ul>
 <h2 id="usage">Usage</h2>
-<p>Before using UROBORUS.pl, you should use TopHat to align the reads to genome, and get the unmapped.sam file.</p>
-<pre><code>usage:
-perl UROBORUS.pl -index /path/genome -gtf /path/genes.gtf -fasta /path unmapped.sam accepted_hits.bam
+<p>Before using UROBORUS.pl, you should use TopHat to align the reads to genome, and get the unmapped.sam and accepted_hits.bam files.</p>
+<pre><code>UROBORUS.pl 2.1.1   (Oct. 1, 2019)
+usage:
+        perl UROBORUS.pl -index /path/genome -gtf /path/genes.gtf -fasta /path/ unmapped.sam accepted_hits.bam
 Options:
--index: genome index (use bowtie1 index);
--gtf:   gene annotation file (*.gtf file);
--fasta: path for genome sequence in fasta file (*.fa) in separate chromosome;
--p:     threads (Integer, default = 6);
--temp:  keeping the temporary file;
--help:  usage help;
+        -index: genome index (use bowtie1 index);
+        -gtf:   gene annotation file (*.gtf file);
+        -fasta: path for genome sequence in fasta file (*.fa) in separate chromosome;
+        -p:     threads (Integer, default = 6);
+        -temp:  keeping the temporary file (0 means no, 1 means yes, default = 0);
+        -help:  usage help;
 </code></pre>
-
 <h2 id="note">Note</h2>
 <ol>
-<li>If the genome sequence in each chromosome (chr1.fa, chr2.fa, chr3.fa)is saved in the directory <code>/home/circRNA/Gene</code>, the path for genome sequence should be set as <code>-fasta /home/circRNA/Gene</code>;</li>
-<li>The following files ( genome index, gene annotation, genome sequence) should be download from TopHat webstie: http://ccb.jhu.edu/software/tophat/igenomes.shtml</li>
+<li>If the genome sequences were saved as '<strong>chr1.fa</strong>' or '<strong>1.fa</strong>', then the -fasta should be set as <strong>-fasta path/</strong>;</li>
+<li>if the genome sequences were saved as '<strong>Homo_sapiens.GRCh38.dna.chromosome.1.fa</strong>', then the -fasta should be set as <strong>-fasta path/Homo_sapiens.GRCh38.dna.chromosome</strong>;</li>
 </ol>
 <h2 id="example">Example</h2>
-<pre><code>perl UROBORUS.pl -index /home/***/index/Homo_sapiens/UCSC/hg19/Sequence/BowtieIndex/genome -gtf /home/***/circRNA/Gene/genes.gtf -fasta /home/***/circRNA/Gene unmapped.sam accepted_hits.bam
+<pre><code>Command:
+        perl UROBORUS.pl -index bowtie1_hg19/hg19 -gtf genes.gtf -fasta Chromosomes_home/ unmapped.sa accepted_hits.bam
 </code></pre>
+<h2 id="output-file-format">Output file format:</h2>
+<pre><code>The output file contains eight columns:
+    1.  Chromosome
+    2.  Start of Junction
+    3.  End of Junction
+    4.  Strand
+    5.  Parental Gene Name
+    6.  Genomic Distance
+    7.  Read Counts
+    8.  Matched Transcript ID
 
-<h2 id="prerequisites">Prerequisites</h2>
-<p>Software Prerequisites:</p>
-<p>The following three software should be installed in your cluster or computer before running the UROBORUS.pl</p>
-<ul>
-<li>TopHat</li>
-</ul>
-<p><code>tophat -p 6 -o RL_9_tophat_out /home/***/index/Homo_sapiens/UCSC/hg19/Sequence/BowtieIndex/genome
-/home/***/data/Glioblastoma/RL_9_OLI_GTCCGC_L008_R1_001.fastq /home/***/data/Glioblastoma/RL_9_OLI_GTCCGC_L008_R2_001.fastq</code></p>
-<ul>
-<li>samtools
-Convert unmapped.bam to unmapped.sam (using samtools view)</li>
-</ul>
-<p><code>samtools view unmapped.bam &gt; unmapped.sam</code></p>
-<ul>
-<li>Bowtie1
-Within UROBORUS.pl, Bowtie1 should be used.
-However, before running UROBORUS.pl, You run Tophat to get unmapped.sam file, Bowtie1 or Bowtie2 should be selected based on read length. </li>
-</ul>
-<h2 id="output-file-format">Output file format</h2>
-<p>The first 3 columns are the same with bed file format.</p>
-<ol>
-<li>Chromosome</li>
-<li>start of junction</li>
-<li>end of junction</li>
-<li>strand</li>
-<li>Parental gene name</li>
-<li>genomic distance</li>
-<li>read counts</li>
-<li>matched transcript id</li>
-</ol>
+Output example:
+    chr18   54426095    54448887    +   WDR7    22792   18  NM_052834
+    chr5    64537930    64569274    -   ADAMTS6 31344   17  NM_197941
+</code></pre>
 <h2 id="reference">Reference</h2>
-<p>Song X, Zhang N, Han P, Lai RK, Wang K, Lu W. Circular RNA Profile in Gliomas Revealed by Identification Tool UROBORUS. Nucleic Acids Research, 2016, 44:e87.</p>
+<p><strong>Song X</strong>, Zhang N, Han P, Lai RK, Wang K, Lu W. Circular RNA Profile in Gliomas Revealed by Identification Tool UROBORUS. Nucleic Acids Research, 2016, 44:e87.</p>
 <h2 id="contact">Contact</h2>
-<p>Please contact Xiaofeng Song (xfsong@nuaa.edu.cn) for questions and comments.</p>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-73567476-1', 'auto');
-  ga('send', 'pageview');
-
-</script></div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-                <p>2015- UROBORUS</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+<p>Please contact <strong>Xiaofeng Song (xfsong@nuaa.edu.cn)</strong> for questions and comments.</p>
+              
             </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="download/" class="btn btn-neutral float-right" title="Download">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>2019- UROBORUS</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
         </div>
-    </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="http://github.com/xiaofengsong/uroborus/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+        <span style="margin-left: 15px"><a href="download/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
 </div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
 
-    </body>
+</body>
 </html>
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-10-26 08:52:54
+Build Date UTC : 2019-10-26 13:50:16
 -->

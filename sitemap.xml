@@ -10,4 +10,14 @@
      <lastmod>2019-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    <url>
+     <loc>http://uroborus.openbioinformatics.org/about/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://uroborus.openbioinformatics.org/releases/</loc>
+     <lastmod>2019-10-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
 </urlset>
